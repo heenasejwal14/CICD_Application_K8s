@@ -64,7 +64,7 @@ jobs:
       - name: modify the image
         run: |
           git config user.email heenasejwal14@gmail.com
-          git config user.name "Heena Sejwal"
+          git config user.name "heenasejwal14"
           pwd
           cat deployment.yaml
           pwd
