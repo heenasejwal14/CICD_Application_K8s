@@ -60,7 +60,7 @@ jobs:
         name: changing the deployment of git repo
         with:
           repository: heenasejwal14/App-Manifest-
-          token: ${{ secrets.GIT_PASSWORD }}
+          token: ${{ secrets.MYPAT }}
       - name: modify the image
         run: |
           git config user.email heenasejwal14@gmail.com
