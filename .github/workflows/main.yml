@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: test
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         name: changing the deployment of git repo
         with:
           repository: 'heenasejwal14/App-Manifest-'
