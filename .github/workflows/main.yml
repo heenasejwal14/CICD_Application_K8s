@@ -71,7 +71,7 @@ jobs:
           sed -i "s+heenasejwal14/images.*+heenasejwal14/images:app-$RUN_NUMBER+g" app-manifest/deployment.yaml
           cat app-manifest/deployment.yaml
           git add .
-          git commit -m 'Done  by Github Actions   Job changemanifest: ${{ github.run_number }}'
+          git commit -m 'Done  by Github Actions   Job changemanifest: ${{ github.run_number }}' || echo "Nothing to push"
           git config --list
           git push origin main
         env:
