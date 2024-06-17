@@ -68,8 +68,8 @@ jobs:
           pwd
           cat deployment.yaml
           pwd
-          sed -i "s+heenasejwal14/images.*+heenasejwal14/images:app-$RUN_NUMBER+g" deployment.yaml
-          cat deployment.yaml
+          sed -i "s+heenasejwal14/images.*+heenasejwal14/images:app-$RUN_NUMBER+g" app-manifest/deployment.yaml
+          cat app-manifest/deployment.yaml
           git add .
           git commit -m 'Done  by Github Actions   Job changemanifest: ${{ github.run_number }}'
           git config --list
