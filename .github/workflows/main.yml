@@ -72,6 +72,6 @@ jobs:
           cat app-manifest/deployment.yaml
           git add .
           git commit -am "${{ github.event.repository.name }}: update develop manifest"
-          git push origin main
+          git push
         env:
           RUN_NUMBER: ${{ github.run_number }}
